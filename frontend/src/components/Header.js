@@ -127,43 +127,7 @@ class Header extends React.Component {
                                 >
                                     <Button disableRipple={true} disableFocusRipple={true} color="default">
                                         <CloudDownload className={classes.leftIcon}/>
-                                        Dataset
-                                    </Button>
-                            </Link>
-                        </MenuItem>
-                        <MenuItem onClick={this.handleMobileMenuClose}>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="challenge"
-                                >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="default">
-                                        <Equalizer className={classes.leftIcon}/>
-                                        Challenge
-                                    </Button>
-                            </Link>
-                        </MenuItem>
-                        <MenuItem onClick={this.handleMobileMenuClose}>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="paper"
-                                >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="default">
-                                        <Description className={classes.leftIcon}/>
-                                        Paper
-                                    </Button>
-                            </Link>
-                        </MenuItem>
-                        <MenuItem onClick={this.handleMobileMenuClose}>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="explore"
-                                >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="default">
-                                        <Explore className={classes.leftIcon}/>
-                                        Explore
+                                        Testing
                                     </Button>
                             </Link>
                         </MenuItem>
@@ -201,54 +165,9 @@ class Header extends React.Component {
                             className={[classes.buttonLink, classes.grow].join(' ')}
                             href={process.env.PUBLIC_URL + '/'}
                         >
-                            <img
-                                className={classes.logo}
-                                srcSet="assets/images/textvqa_logo_and_text_white.svg"
-                                alt="TextVQA"
-                            />
                         </Link>
                         <div className={classes.sectionDesktop}>
                             <Route exact path="/explore" render={() => exploreHelpMenu}/>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="challenge"
-                            >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="inherit">
-                                        <Equalizer className={classes.leftIcon}/>
-                                        Challenge
-                                    </Button>
-                            </Link>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="paper"
-                            >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="inherit">
-                                        <Description className={classes.leftIcon}/>
-                                        Paper
-                                    </Button>
-                            </Link>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="dataset"
-                            >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="inherit">
-                                        <CloudDownload className={classes.leftIcon}/>
-                                        Dataset
-                                    </Button>
-                            </Link>
-                            <Link
-                                underline="none"
-                                className={[classes.buttonLink, classes.buttonsSide].join(' ')}
-                                href="explore"
-                            >
-                                    <Button disableRipple={true} disableFocusRipple={true} color="inherit">
-                                        <Explore className={classes.leftIcon}/>
-                                        Explore
-                                    </Button>
-                            </Link>
                         </div>
                         <div className={classes.sectionMobile}>
                             <IconButton aria-haspopup="true" onClick={this.handleMobileMenuOpen} color="inherit">
